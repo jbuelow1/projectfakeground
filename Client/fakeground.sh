@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#json=$(curl http://jplp.tk/fakeground/fakeground.json)
-json='{"masterswitch":"true","andrew_enabled":"true","andrew_id":"1","andrew_format":"png","andrew_url":"http://example.com/example_image.png",}'
+json=$(curl https://jbuelow1.github.io/projectfakeground/Server/fakeground.json)
 masterswitch=$(echo $json | grep -Po '"masterswitch":.*?[^\\]",')
 
 echo "Starting..."
